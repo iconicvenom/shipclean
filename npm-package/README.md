@@ -2,14 +2,12 @@
 
 Preview leftover AI-coding artifacts (planning markdown, screenshots, debug logs, backups, duplicates) before you ship. The default command **only reports**. Cleanup is a review-driven **quarantine**, not silent deletion.
 
-The published name is still provisional (`shipclean-starter-local`). Do not publish until the owner confirms the npm name.
-
 ## Install
 
 ```bash
-npm install -g shipclean-starter-local
-# or from a local pack:
-# npm install ./shipclean-starter-local-0.1.0.tgz
+npm install -g shipclean
+# or run directly with npx:
+# npx shipclean .
 ```
 
 Requires Node.js 20 or later. Works offline. No API keys, telemetry, or execution of files inside the scanned project.
@@ -101,7 +99,7 @@ Config cannot turn on symlink following and cannot unprotect hard safety rules. 
 ## Programmatic use
 
 ```js
-import { scanProject, formatHumanReport } from 'shipclean-starter-local';
+import { scanProject, formatHumanReport } from 'shipclean';
 
 const report = await scanProject('/path/to/project');
 console.log(formatHumanReport(report));
