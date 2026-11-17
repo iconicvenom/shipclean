@@ -1,0 +1,8 @@
+.DS_Store
+.vscode/
+node_modules/
+.shipclean-quarantine/
+*.log
+!npm-package/examples/**/debug.log
+*.tgz
+coverage/

@@ -1,0 +1,37 @@
+{
+  "name": "shipclean-starter-local",
+  "version": "0.1.0",
+  "description": "Safe preview and quarantine CLI for leftover AI-agent planning files, screenshots, logs, and duplicates",
+  "type": "module",
+  "bin": {
+    "shipclean": "./bin/shipclean.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "examples/",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node --check bin/shipclean.js && node --check src/index.js && node --check src/cli.js && node --check src/scan.js"
+  },
+  "license": "MIT",
+  "keywords": [
+    "cli",
+    "cleanup",
+    "ai",
+    "codex",
+    "claude",
+    "deployment",
+    "quarantine"
+  ]
+}

@@ -1,0 +1,26 @@
+export class ShipcleanError extends Error {
+  constructor(message, code = 'SHIPCLEAN_ERROR', exitCode = 1) {
+    super(message);
+    this.name = 'ShipcleanError';
+    this.code = code;
+    this.exitCode = exitCode;
+  }
+}
+
+export const ERROR_CODES = Object.freeze({
+  PATH_NOT_FOUND: 'PATH_NOT_FOUND',
+  NOT_A_DIRECTORY: 'NOT_A_DIRECTORY',
+  UNKNOWN_OPTION: 'UNKNOWN_OPTION',
+  INVALID_USAGE: 'INVALID_USAGE',
+  INVALID_CONFIG: 'INVALID_CONFIG',
+  SCAN_FAILED: 'SCAN_FAILED',
+  OUTPUT_PATH_INVALID: 'OUTPUT_PATH_INVALID',
+  NOT_IMPLEMENTED: 'NOT_IMPLEMENTED',
+  NOT_A_TTY: 'NOT_A_TTY',
+  LOCK_FAILED: 'LOCK_FAILED',
+  PROTECTED_PATH: 'PROTECTED_PATH',
+  PATH_ESCAPE: 'PATH_ESCAPE',
+  CHANGED_SINCE_SCAN: 'CHANGED_SINCE_SCAN',
+  OVERWRITE_REFUSED: 'OVERWRITE_REFUSED',
+  MANIFEST_INVALID: 'MANIFEST_INVALID'
+});

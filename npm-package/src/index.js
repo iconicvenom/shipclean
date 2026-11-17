@@ -1,0 +1,10 @@
+export { scanProject } from './scan.js';
+export { formatHumanReport, formatJson } from './report.js';
+export { loadConfig, validateConfig, DEFAULT_CONFIG, CONFIG_FILENAME, exampleConfig } from './config.js';
+export { parseArgs, runCli } from './cli.js';
+export { quarantineSelected, QUARANTINE_DIR } from './quarantine.js';
+export { restoreBatch, listQuarantineBatches } from './restore.js';
+export { ShipcleanError, ERROR_CODES } from './errors.js';
+export { classifyFile } from './classify.js';
+export { protectionFor } from './protect.js';
+export { findDuplicateGroups } from './duplicates.js';
