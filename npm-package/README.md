@@ -5,9 +5,9 @@ Preview leftover AI-coding artifacts (planning markdown, screenshots, debug logs
 ## Install
 
 ```bash
-npm install -g shipclean
+npm install -g @iconic.venom/shipclean
 # or run directly with npx:
-# npx shipclean .
+# npx @iconic.venom/shipclean .
 ```
 
 Requires Node.js 20 or later. Works offline. No API keys, telemetry, or execution of files inside the scanned project.
@@ -99,7 +99,7 @@ Config cannot turn on symlink following and cannot unprotect hard safety rules. 
 ## Programmatic use
 
 ```js
-import { scanProject, formatHumanReport } from 'shipclean';
+import { scanProject, formatHumanReport } from '@iconic.venom/shipclean';
 
 const report = await scanProject('/path/to/project');
 console.log(formatHumanReport(report));

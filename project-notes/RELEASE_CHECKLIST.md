@@ -6,18 +6,8 @@
 - [x] CI workflow added at `.github/workflows/ci.yml`.
 - [x] Run `npm pack` from `npm-package/` and inspect contents (27 files, no tests or handoff docs).
 - [x] Test packed `.tgz` in an isolated consumer fixture (`npx shipclean --version` and `--help` verified).
-- [x] Verify no secrets, credentials, or root planning files are shipped in the tarball.
-- [ ] Confirm final npm package name and account scope with the owner (currently provisional `shipclean-starter-local`).
-- [ ] Request explicit approval before running `npm publish`.
-- [ ] Publish only from `npm-package/` after explicit user authorization.
-
-Suggested publish flow (gated on owner authorization):
-
-```bash
-cd npm-package
-npm test
-npm pack --dry-run
-npm login
-npm whoami
-# npm publish --access public
-```
+- [x] Public GitHub repository live: **https://github.com/iconicvenom/shipclean**.
+- [x] Authenticate as npm user `iconic.venom`.
+- [x] Package renamed to `@iconic.venom/shipclean` per registry requirements.
+- [x] `npm publish --access public` executed successfully (`+ @iconic.venom/shipclean@0.1.0`).
+- [x] Registered on npm: **https://www.npmjs.com/package/@iconic.venom/shipclean** (staged / processing).

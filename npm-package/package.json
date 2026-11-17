@@ -1,5 +1,5 @@
 {
-  "name": "shipclean",
+  "name": "@iconic.venom/shipclean",
   "version": "0.1.0",
   "description": "Safe preview and quarantine CLI for leftover AI-agent planning files, screenshots, logs, and duplicates",
   "type": "module",
