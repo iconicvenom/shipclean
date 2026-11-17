@@ -9,6 +9,14 @@
   "exports": {
     ".": "./src/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iconicvenom/shipclean.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iconicvenom/shipclean/issues"
+  },
+  "homepage": "https://github.com/iconicvenom/shipclean#readme",
   "files": [
     "bin/",
     "src/",
